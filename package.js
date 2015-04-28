@@ -2,9 +2,9 @@ Package.describe({
   name: 'jcheroske:positioning-mixins',
   version: '0.0.1',
   // Brief, one-line summary of the package.
-  summary: '',
+  summary: 'Various LESS mixins that make positioning elements easier.',
   // URL to the Git repository containing the source code for this package.
-  git: '',
+  git: 'git@bitbucket.org:jcheroske/positioning-mixins.git',
   // By default, Meteor will default to using README.md for documentation.
   // To avoid submitting documentation, set this field to null.
   documentation: 'README.md'
@@ -12,11 +12,5 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.1.0.2');
-  api.addFiles('positioning-mixins.js');
-});
-
-Package.onTest(function(api) {
-  api.use('tinytest');
-  api.use('jcheroske:positioning-mixins');
-  api.addFiles('positioning-mixins-tests.js');
+  api.addFiles('positioning-mixins.less');
 });
